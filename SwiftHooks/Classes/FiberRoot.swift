@@ -18,10 +18,10 @@ class FiberRoot {
     
     private func fiber(_ for: AnyObject) -> FiberNode? {
         let id = ObjectIdentifier(`for`)
-        return fiber(for: id)
+        return fiber(for: id, owner: `for`)
     }
     
-    internal func fiber(for id: ObjectIdentifier) -> FiberNode? {
+    internal func fiber(for id: ObjectIdentifier, owner: AnyObject? = nil) -> FiberNode? {
         defer {
             scheduleCompactFiberNode()
         }
@@ -33,8 +33,10 @@ class FiberRoot {
             }
             return node
         }
-        fibers[id] = FiberNode()
-        return fibers[id]!
+        if let owner {
+            fibers[id] = FiberNode(owner: WeakRef(ref: owner))
+        }
+        return fibers[id]
     }
     
     func context<T:Context>(for type: T.Type) -> T? {
@@ -127,6 +129,11 @@ class FiberNode {
     var states: [WeakRef<AnyObject>] = []
     var sideEffects: [(effect: () -> Void, deps:[WeakRef<AnyObject>])] = []
     var memoDeps: [[String]] = []
+    var owner: WeakRef<AnyObject>
+    
+    init(owner: WeakRef<AnyObject>) {
+        self.owner = owner
+    }
     
     func pushState(_ hook: AnyObject) {
         states.append(WeakRef(ref: hook))
@@ -155,6 +162,6 @@ class FiberNode {
     /// 当一个 fiber node 中的所有 state 都已经被释放的时候，这个 fiber node 可以被释放
     /// - Returns: 是否可以释放
     func canbeReleased() -> Bool {
-        states.first(where: { !$0.isEmpty }) == nil
+        self.owner.isEmpty
     }
 }
