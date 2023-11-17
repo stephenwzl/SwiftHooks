@@ -1,0 +1,6 @@
+framework module SwiftHooks {
+  umbrella header "SwiftHooks-umbrella.h"
+
+  export *
+  module * { export * }
+}

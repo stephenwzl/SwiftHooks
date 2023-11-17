@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftHooks
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Fiber {
+    
+    lazy var count = useState(1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
