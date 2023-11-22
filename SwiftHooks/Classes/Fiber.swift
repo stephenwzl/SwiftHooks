@@ -63,7 +63,7 @@ public extension Fiber where Self: NSObject {
     }
     @discardableResult
     func createContext(_ initialValue: Context) -> Context {
-        assert(initialValue == self, "context can not attach to itself")
+        assert(initialValue != self, "context can not attach to itself")
         let dynamicType = type(of: initialValue)
         let key = String(describing: dynamicType)
         FiberRoot.shared.createContext(type: key, value: initialValue, owner: self)
