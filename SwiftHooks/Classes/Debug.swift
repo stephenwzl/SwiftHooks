@@ -14,7 +14,7 @@ func DebugLog(_ str: String) {
 
 private var FiberNodeKey: UInt8 = 0
 private var FiberContextKey: UInt8 = 0
-extension UIResponder {
+extension NSObject {
     var fiberNode: FiberNode? {
         get {
             return objc_getAssociatedObject(self, &FiberNodeKey) as? FiberNode

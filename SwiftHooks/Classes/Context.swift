@@ -9,8 +9,8 @@ import Foundation
 
 protocol ContextProtocol {}
 
-open class Context: ContextProtocol {
-    public init() {}
+open class Context: NSObject, ContextProtocol {
+    public override init() {}
     
     var deps: [ObjectIdentifier] = []
     internal func addDeps(_ mount: any Fiber&AnyObject) {

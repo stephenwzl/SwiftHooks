@@ -40,7 +40,7 @@ public protocol Fiber {
     func createContext(_ initialValue: Context) -> Context
 }
 
-public extension Fiber where Self: UIResponder {
+public extension Fiber where Self: NSObject {
     func useState<T>(_ initialValue: T) -> State<T> {
         let hook = State(state: initialValue, effect: { [weak self] in
             guard let self = self else {
@@ -63,6 +63,7 @@ public extension Fiber where Self: UIResponder {
     }
     @discardableResult
     func createContext(_ initialValue: Context) -> Context {
+        assert(initialValue == self, "context can not attach to itself")
         let dynamicType = type(of: initialValue)
         let key = String(describing: dynamicType)
         FiberRoot.shared.createContext(type: key, value: initialValue, owner: self)

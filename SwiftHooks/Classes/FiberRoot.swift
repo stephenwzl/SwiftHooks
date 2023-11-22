@@ -16,12 +16,12 @@ class FiberRoot {
     
     private var fibers = [ObjectIdentifier: WeakRef<FiberNode>]()
     
-    private func fiber(_ for: UIResponder) -> FiberNode? {
+    private func fiber(_ for: NSObject) -> FiberNode? {
         let id = ObjectIdentifier(`for`)
         return fiber(for: id, owner: `for`)
     }
     
-    internal func fiber(for id: ObjectIdentifier, owner: UIResponder? = nil) -> FiberNode? {
+    internal func fiber(for id: ObjectIdentifier, owner: NSObject? = nil) -> FiberNode? {
         if let node = fibers[id]?.ref {
             if node.canbeReleased() {
                 fibers.removeValue(forKey: id)
@@ -73,15 +73,15 @@ class FiberRoot {
         return contexts
     }
     
-    func pushState(_ hook: AnyObject, mountPoint: UIResponder) {
+    func pushState(_ hook: AnyObject, mountPoint: NSObject) {
         fiber(mountPoint)?.pushState(hook)
     }
     
-    func pushSideEffect(effectBlock: @escaping () -> Void, deps: [AnyObject], mountPoint: UIResponder) {
+    func pushSideEffect(effectBlock: @escaping () -> Void, deps: [AnyObject], mountPoint: NSObject) {
         fiber(mountPoint)?.pushSideEffect(effectBlock: effectBlock, deps: deps)
     }
     
-    func execSideEffect(mountPoint: UIResponder) {
+    func execSideEffect(mountPoint: NSObject) {
         fiber(mountPoint)?.execSideEffect()
         // fiber 关联的 context 也需要执行
         // 如果这个 fiber 已经释放了，那么对应的 deps 也要移除
@@ -122,7 +122,7 @@ class FiberRoot {
         }
     }
     
-    func createContext(type: String, value: Context, owner: UIResponder) {
+    func createContext(type: String, value: Context, owner: NSObject) {
         owner.fiberContext = value
         contexts[type] = (WeakRef(ref: value), ObjectIdentifier(owner))
     }
