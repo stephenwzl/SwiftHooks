@@ -40,7 +40,7 @@ public protocol Fiber {
     func createContext(_ initialValue: Context) -> Context
 }
 
-public extension Fiber where Self: AnyObject {
+public extension Fiber where Self: UIResponder {
     func useState<T>(_ initialValue: T) -> State<T> {
         let hook = State(state: initialValue, effect: { [weak self] in
             guard let self = self else {

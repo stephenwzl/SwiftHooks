@@ -7,36 +7,37 @@
 
 import Foundation
 
-private typealias ContextPair = (context: Context, ownerId: ObjectIdentifier, ownerRef: WeakRef<AnyObject>)
+private typealias ContextPair = (context: WeakRef<Context>, ownerId: ObjectIdentifier)
 
 class FiberRoot {
     static let shared = FiberRoot()
     
     private var contexts = [String: ContextPair]()
     
-    private var fibers = [ObjectIdentifier: FiberNode]()
+    private var fibers = [ObjectIdentifier: WeakRef<FiberNode>]()
     
-    private func fiber(_ for: AnyObject) -> FiberNode? {
+    private func fiber(_ for: UIResponder) -> FiberNode? {
         let id = ObjectIdentifier(`for`)
         return fiber(for: id, owner: `for`)
     }
     
-    internal func fiber(for id: ObjectIdentifier, owner: AnyObject? = nil) -> FiberNode? {
-        defer {
-            scheduleCompactFiberNode()
-        }
-        if let node = fibers[id] {
+    internal func fiber(for id: ObjectIdentifier, owner: UIResponder? = nil) -> FiberNode? {
+        if let node = fibers[id]?.ref {
             if node.canbeReleased() {
                 fibers.removeValue(forKey: id)
                 DebugLog("fiber node \(String(describing: id)) released")
                 return nil
             }
             return node
+        } else {
+            fibers.removeValue(forKey: id)
         }
         if let owner {
-            fibers[id] = FiberNode(owner: WeakRef(ref: owner))
+            let node = FiberNode(owner: WeakRef(ref: owner))
+            owner.fiberNode = node
+            fibers[id] = WeakRef(ref: node)
         }
-        return fibers[id]
+        return fibers[id]?.ref
     }
     
     func context<T:Context>(for type: T.Type) -> T? {
@@ -47,12 +48,13 @@ class FiberRoot {
         guard let pair = self.contexts[key] else {
             return nil
         }
-        if pair.ownerRef.isEmpty {
+        
+        if pair.context.isEmpty {
             contexts.removeValue(forKey: key)
             DebugLog("context \(key) released")
             return nil
         }
-        return pair.context as? T
+        return pair.context.ref as? T
     }
     
     private func context(for owner: ObjectIdentifier) -> [Context] {
@@ -61,8 +63,8 @@ class FiberRoot {
         }
         var contexts = [Context]()
         for (_, pair) in self.contexts {
-            if pair.ownerId == owner && pair.ownerRef.isEmpty == false {
-                contexts.append(pair.context)
+            if pair.ownerId == owner, let context = pair.context.ref {
+                contexts.append(context)
             } else {
                 // 如果这个 owner 已经释放了，那么说明所有关联的 context 都已经释放了
                 return []
@@ -71,15 +73,15 @@ class FiberRoot {
         return contexts
     }
     
-    func pushState(_ hook: AnyObject, mountPoint: AnyObject) {
+    func pushState(_ hook: AnyObject, mountPoint: UIResponder) {
         fiber(mountPoint)?.pushState(hook)
     }
     
-    func pushSideEffect(effectBlock: @escaping () -> Void, deps: [AnyObject], mountPoint: AnyObject) {
+    func pushSideEffect(effectBlock: @escaping () -> Void, deps: [AnyObject], mountPoint: UIResponder) {
         fiber(mountPoint)?.pushSideEffect(effectBlock: effectBlock, deps: deps)
     }
     
-    func execSideEffect(mountPoint: AnyObject) {
+    func execSideEffect(mountPoint: UIResponder) {
         fiber(mountPoint)?.execSideEffect()
         // fiber 关联的 context 也需要执行
         // 如果这个 fiber 已经释放了，那么对应的 deps 也要移除
@@ -95,7 +97,7 @@ class FiberRoot {
     private func scheduleCompactFiberNode() {
         Task.detached { @MainActor in
             for (id, node) in self.fibers {
-                if node.canbeReleased() {
+                if node.isEmpty {
                     self.fibers.removeValue(forKey: id)
                     DebugLog("fiber node \(String(describing: id)) released")
                 }
@@ -109,7 +111,7 @@ class FiberRoot {
         Task.detached { @MainActor in
             var toRemove: [String] = []
             for (id, pair) in self.contexts {
-                if pair.ownerRef.isEmpty {
+                if pair.context.isEmpty {
                     toRemove.append(id)
                 }
             }
@@ -120,8 +122,9 @@ class FiberRoot {
         }
     }
     
-    func createContext(type: String, value: Context, owner: AnyObject) {
-        contexts[type] = (value, ObjectIdentifier(owner), WeakRef(ref: owner))
+    func createContext(type: String, value: Context, owner: UIResponder) {
+        owner.fiberContext = value
+        contexts[type] = (WeakRef(ref: value), ObjectIdentifier(owner))
     }
 }
 

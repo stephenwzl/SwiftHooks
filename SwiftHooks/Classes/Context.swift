@@ -32,6 +32,10 @@ open class Context: ContextProtocol {
         }
     }
     
+    deinit {
+        DebugLog("context \(String(describing: self)) released")
+    }
+    
 }
 
 @propertyWrapper
