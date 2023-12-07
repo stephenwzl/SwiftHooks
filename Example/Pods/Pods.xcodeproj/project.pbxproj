@@ -47,12 +47,12 @@
 		12819388F22267BE20E14AB51459E973 /* Pods-SwiftHooks_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftHooks_Example.modulemap"; sourceTree = "<group>"; };
 		2988D8C8CC630A807226FF61870D5C92 /* Pods-SwiftHooks_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftHooks_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2D37B84857BE63453DEF86D1FDE7EB7B /* Pods-SwiftHooks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		319ED32702177A0C316705BA2C45307A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		319ED32702177A0C316705BA2C45307A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		38A389021C116A53F4AC47D791BFFFBE /* Pods-SwiftHooks_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftHooks_Tests-dummy.m"; sourceTree = "<group>"; };
 		3B8760E0C104A64B64E1E01301138F25 /* Pods-SwiftHooks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3C0A73EEF1803ACE3135C4A401120182 /* SwiftHooks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHooks.modulemap; sourceTree = "<group>"; };
 		3D35C32F484C108238C534D05EBEA9DE /* Fiber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fiber.swift; path = SwiftHooks/Classes/Fiber.swift; sourceTree = "<group>"; };
-		50DAD98F6CB5B957B7816025285215ED /* SwiftHooks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftHooks.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		50DAD98F6CB5B957B7816025285215ED /* SwiftHooks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftHooks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.release.xcconfig; sourceTree = "<group>"; };
 		56556479260B9863CDA587841F386C9F /* SwiftHooks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHooks-umbrella.h"; sourceTree = "<group>"; };
 		598815FB01D74B4F4B01A64AF187330A /* Pods-SwiftHooks_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftHooks_Tests"; path = Pods_SwiftHooks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,14 +63,14 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C2ACB46B1958265D1A70CEA86A5159A /* Pods-SwiftHooks_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftHooks_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8585CE2D0C132CCE75D18EDF4A91500C /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = SwiftHooks/Classes/Context.swift; sourceTree = "<group>"; };
-		880ED83719665DB5F476A8E83C291900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		880ED83719665DB5F476A8E83C291900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8854A471208DB73542A6AA755F23F0A1 /* Pods-SwiftHooks_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftHooks_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CF94E7F1C6E0AABD7977FAD19E287AA /* Pods-SwiftHooks_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftHooks_Example-umbrella.h"; sourceTree = "<group>"; };
 		92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.debug.xcconfig; sourceTree = "<group>"; };
 		94EFBBAB715151FF7DA0D149EFD312FE /* Pods-SwiftHooks_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		95ADE6E5E4F5DF662EAFAC05EF0148A5 /* Pods-SwiftHooks_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Tests-Info.plist"; sourceTree = "<group>"; };
 		97426151DBE40135AC861532540DEC8C /* Pods-SwiftHooks_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftHooks_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4A4EAD67C5B040AD4872F207A5D870E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = SwiftHooks/Classes/State.swift; sourceTree = "<group>"; };
 		B8813560D6A50DD4FB99FB08E167B08A /* WeakRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakRef.swift; path = SwiftHooks/Classes/WeakRef.swift; sourceTree = "<group>"; };
 		B97F0AF58E24AE319100ACD210090C4C /* FiberRoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FiberRoot.swift; path = SwiftHooks/Classes/FiberRoot.swift; sourceTree = "<group>"; };
@@ -426,38 +426,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08486F7D2AC2ACCFF6D42AA9AF9C49CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
-				PRODUCT_MODULE_NAME = SwiftHooks;
-				PRODUCT_NAME = SwiftHooks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		24DFBA14F29933BF6D9017B30C58BE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CB5038CF2C858AC6EC08DA25C6CB8DC /* Pods-SwiftHooks_Example.release.xcconfig */;
@@ -474,7 +442,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftHooks_Example/Pods-SwiftHooks_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftHooks_Example/Pods-SwiftHooks_Example.modulemap";
@@ -508,7 +476,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftHooks_Tests/Pods-SwiftHooks_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftHooks_Tests/Pods-SwiftHooks_Tests.modulemap";
@@ -519,6 +487,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		710868CB93DCF6BA93CBCFBA7BC95C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHooks;
+				PRODUCT_NAME = SwiftHooks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -580,7 +579,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -602,7 +602,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftHooks_Example/Pods-SwiftHooks_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftHooks_Example/Pods-SwiftHooks_Example.modulemap";
@@ -635,7 +635,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftHooks_Tests/Pods-SwiftHooks_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftHooks_Tests/Pods-SwiftHooks_Tests.modulemap";
@@ -646,6 +646,38 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD1BAEBE9E51BACDD60D535D81826072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHooks;
+				PRODUCT_NAME = SwiftHooks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -719,37 +751,6 @@
 			};
 			name = Debug;
 		};
-		DBAF8FC04861F13A98402EB298917C86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
-				PRODUCT_MODULE_NAME = SwiftHooks;
-				PRODUCT_NAME = SwiftHooks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -765,8 +766,8 @@
 		68A7CC29E28A957AC7DC7DF11EC4ED50 /* Build configuration list for PBXNativeTarget "SwiftHooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBAF8FC04861F13A98402EB298917C86 /* Debug */,
-				08486F7D2AC2ACCFF6D42AA9AF9C49CA /* Release */,
+				710868CB93DCF6BA93CBCFBA7BC95C0C /* Debug */,
+				BD1BAEBE9E51BACDD60D535D81826072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

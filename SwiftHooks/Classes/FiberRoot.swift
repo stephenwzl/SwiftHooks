@@ -12,6 +12,10 @@ private typealias ContextPair = (context: WeakRef<Context>, ownerId: ObjectIdent
 class FiberRoot {
     static let shared = FiberRoot()
     
+    private init() {
+        setupAutoRelease()
+    }
+    
     private var contexts = [String: ContextPair]()
     
     private var fibers = [ObjectIdentifier: WeakRef<FiberNode>]()
@@ -41,9 +45,6 @@ class FiberRoot {
     }
     
     func context<T:Context>(for type: T.Type) -> T? {
-        defer {
-            scheduleCompactContext()
-        }
         let key = String(describing: type)
         guard let pair = self.contexts[key] else {
             return nil
@@ -58,9 +59,6 @@ class FiberRoot {
     }
     
     private func context(for owner: ObjectIdentifier) -> [Context] {
-        defer {
-            scheduleCompactContext()
-        }
         var contexts = [Context]()
         for (_, pair) in self.contexts {
             if pair.ownerId == owner, let context = pair.context.ref {
@@ -88,19 +86,36 @@ class FiberRoot {
         for context in context(for: ObjectIdentifier(mountPoint)) {
             context.execSideEffects()
         }
+        // FIXED: 如果 mount point 本身就是一个 context，那么它的 side effect 也需要执行
+        // 上面的方法无法执行得到
+        if let mountPointContext = mountPoint as? Context {
+            mountPointContext.execSideEffects()
+        }
     }
     
+    private func setupAutoRelease() {
+        // 定义一个回调函数
+        let runLoopObserverCallback: CFRunLoopObserverCallBack = { observer, activity, context in
+            // 在这里执行你想在 RunLoop 空闲时进行的操作
+            FiberRoot.shared.scheduleCompactFiberNode()
+            FiberRoot.shared.scheduleCompactContext()
+        }
+
+        // 创建 RunLoop 观察者
+        if let observer = CFRunLoopObserverCreate(nil, CFRunLoopActivity.beforeWaiting.rawValue, true, 0, runLoopObserverCallback, nil) {
+            // 将观察者添加到主 RunLoop
+            CFRunLoopAddObserver(CFRunLoopGetMain(), observer, .defaultMode)
+        }
+    }
     
     
     /// 自动释放不再使用的 fiber Node
     /// TODO：这个方法可能在某些循环中会被多次调用，后期优化可以合并
     private func scheduleCompactFiberNode() {
-        Task.detached { @MainActor in
-            for (id, node) in self.fibers {
-                if node.isEmpty {
-                    self.fibers.removeValue(forKey: id)
-                    DebugLog("fiber node \(String(describing: id)) released")
-                }
+        for (id, node) in self.fibers {
+            if node.isEmpty {
+                self.fibers.removeValue(forKey: id)
+                DebugLog("fiber node \(String(describing: id)) released")
             }
         }
     }
@@ -108,17 +123,15 @@ class FiberRoot {
     /// 自动释放不再使用的 context
     /// TODO：这个方法可能在某些循环中会被多次调用，后期优化可以合并
     private func scheduleCompactContext() {
-        Task.detached { @MainActor in
-            var toRemove: [String] = []
-            for (id, pair) in self.contexts {
-                if pair.context.isEmpty {
-                    toRemove.append(id)
-                }
+        var toRemove: [String] = []
+        for (id, pair) in self.contexts {
+            if pair.context.isEmpty {
+                toRemove.append(id)
             }
-            if toRemove.count > 0 {
-                toRemove.forEach({ self.contexts.removeValue(forKey: $0) })
-                DebugLog("context \(toRemove) released")
-            }
+        }
+        if toRemove.count > 0 {
+            toRemove.forEach({ self.contexts.removeValue(forKey: $0) })
+            DebugLog("context \(toRemove) released")
         }
     }
     
@@ -155,8 +168,8 @@ class FiberNode {
         let currentDeps = sideEffects.map({ $0.1.map({$0.sig ?? ""}) })
         for (index, deps) in currentDeps.enumerated() {
             if deps != memoDeps[index] {
-                sideEffects[index].effect()
                 memoDeps[index] = deps
+                sideEffects[index].effect()
             }
         }
         

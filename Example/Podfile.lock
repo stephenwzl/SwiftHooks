@@ -1,5 +1,5 @@
 PODS:
-  - SwiftHooks (0.1.0)
+  - SwiftHooks (1.0.2)
 
 DEPENDENCIES:
   - SwiftHooks (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftHooks: f4c9f1e00d9a418f0d64079eee04b7c444a228a3
+  SwiftHooks: c5d426db97eba5a652e77bbe1d038ce2eb3fe6dc
 
-PODFILE CHECKSUM: 8745b354012a9654cac236abd756514495eda567
+PODFILE CHECKSUM: ceb7a1ebe0d3528dd4a75316c62e5790427c5ae4
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.14.3

@@ -1,9 +1,9 @@
 {
   "name": "SwiftHooks",
-  "version": "0.1.0",
-  "summary": "A short description of SwiftHooks.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/stephenwzl/SwiftHooks",
+  "version": "1.0.2",
+  "summary": "一个简单易用的状态管理框架",
+  "description": "类似于 React Hooks,\nSwiftHooks是一个简单易用的状态管理框架，它可以帮助你管理应用中的状态，让你的代码更加清晰易懂。",
+  "homepage": "https://github.com/atlasv-hz-ios/SwiftHooks",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/stephenwzl/SwiftHooks.git",
-    "tag": "0.1.0"
+    "tag": "1.0.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0",
+    "osx": "12.0"
   },
   "source_files": "SwiftHooks/Classes/**/*"
 }
