@@ -8,7 +8,9 @@
 import Foundation
 
 protocol ContextProtocol {}
-
+/// Context的基类
+///
+/// 通过继承实现的 context可以完整地实现 context跨 scope共享 state的能力
 open class Context: NSObject, ContextProtocol {
     public override init() {}
     

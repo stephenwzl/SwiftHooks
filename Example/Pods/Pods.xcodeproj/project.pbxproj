@@ -7,32 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05AB5ED881305CD725950EE9E4485C4D /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB042351243FAB1CFA1813E0830C375 /* Debug.swift */; };
 		0EB5817FF5E8A9E19B498586A9E37EA3 /* Pods-SwiftHooks_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF94E7F1C6E0AABD7977FAD19E287AA /* Pods-SwiftHooks_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11BFDF683FFF7CAC87EDAC248D06FF51 /* FiberRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F0AF58E24AE319100ACD210090C4C /* FiberRoot.swift */; };
-		14928C3A5746D7011398444274C66E9F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4EAD67C5B040AD4872F207A5D870E /* State.swift */; };
-		46D1A19990035C45F18155905B771214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		488F7D9B207C1C95DC0C5A889A5E1E08 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8813560D6A50DD4FB99FB08E167B08A /* WeakRef.swift */; };
+		2E10B7DFE2432222BA7806FF13099BFA /* FiberRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8097304AEE4F34335F2A08295CF5709 /* FiberRoot.swift */; };
+		481AF88933972E895CF93E9D2C87B2EB /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25BC0C3D01122F6648355FD0D9E8509 /* State.swift */; };
+		496C8286D686C720520435A826AC4484 /* SwiftHooks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB22745DCA10AFA5AEFCE2BE80CFDC6 /* SwiftHooks-dummy.m */; };
 		5620754E7E91DCDA4FA1E0606C455722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5A1622A495A54B9A38D8EC8D47CB7DE2 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8585CE2D0C132CCE75D18EDF4A91500C /* Context.swift */; };
+		611CB050E366E16C93DAE03678F65D9C /* Documentation.docc in Resources */ = {isa = PBXBuildFile; fileRef = 36E9A130AD181D2A80246A7EE548FC8D /* Documentation.docc */; };
 		64BB3D9CE0BA38DDCB50967FF4014E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		96639B079C4BFC35BBA15B717B583956 /* Fiber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35C32F484C108238C534D05EBEA9DE /* Fiber.swift */; };
+		6D433568B580CEF30535FC42363DCBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8C336396B24B8F1DF1F3D3C96189B27E /* SwiftHooks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8518C14979ABF430A8865326B3FDCB8 /* SwiftHooks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		916CE48E9A0A498C725797ABFC5B11A4 /* Fiber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C6C7E2405E07F581E791132B4525F /* Fiber.swift */; };
 		AE67AC98F577EDF70670905C26AC11F3 /* Pods-SwiftHooks_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F200EA7BCC50D0EB4FCB1055843BD /* Pods-SwiftHooks_Example-dummy.m */; };
-		C4233C0DD5D12F6F6D8C7FC16ED870E6 /* SwiftHooks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E930DFB7F941A419A571BE9E6BE26C /* SwiftHooks-dummy.m */; };
-		D1D31F8E1837A992F37E7306C12CA141 /* SwiftHooks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56556479260B9863CDA587841F386C9F /* SwiftHooks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B63907BC380810F771B7A7C82EA39124 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D52D4CAE1C43C95C039FF46BAD38CB /* Debug.swift */; };
+		C7B55ACF12DA9AA6EE60996B9F730995 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F001A6BFB0AC3CD3E7F46D5B0E44FE /* Context.swift */; };
 		E2F98A6EE166BE5BA227C2920825C1A4 /* Pods-SwiftHooks_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A389021C116A53F4AC47D791BFFFBE /* Pods-SwiftHooks_Tests-dummy.m */; };
 		EF45918C4BCC1026149BD5A3926FD64A /* Pods-SwiftHooks_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2ACB46B1958265D1A70CEA86A5159A /* Pods-SwiftHooks_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDAE7A7E46FA73B0989A0BC47D90898B /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D462291167C0316D277116C1A8359 /* WeakRef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		66EE19E3B83C54F47ABABD05268F4D9E /* PBXContainerItemProxy */ = {
+		3B31E98073EDEF1784C89C2ADD49D949 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DB0E7FAC316AA4C459E8B8E8C3AC75CA;
 			remoteInfo = "Pods-SwiftHooks_Example";
 		};
-		836F335E3742AADE73751552A8BFCC7C /* PBXContainerItemProxy */ = {
+		79DA6D5CECD86466FC09FA577174EB32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -43,39 +44,40 @@
 
 /* Begin PBXFileReference section */
 		049F200EA7BCC50D0EB4FCB1055843BD /* Pods-SwiftHooks_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftHooks_Example-dummy.m"; sourceTree = "<group>"; };
-		0BB042351243FAB1CFA1813E0830C375 /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = SwiftHooks/Classes/Debug.swift; sourceTree = "<group>"; };
 		12819388F22267BE20E14AB51459E973 /* Pods-SwiftHooks_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftHooks_Example.modulemap"; sourceTree = "<group>"; };
+		1D16A51FD2DE10CAE1A94FFD04DA4545 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2988D8C8CC630A807226FF61870D5C92 /* Pods-SwiftHooks_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftHooks_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2D37B84857BE63453DEF86D1FDE7EB7B /* Pods-SwiftHooks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		319ED32702177A0C316705BA2C45307A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		32D52D4CAE1C43C95C039FF46BAD38CB /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = SwiftHooks/Classes/Debug.swift; sourceTree = "<group>"; };
+		32F001A6BFB0AC3CD3E7F46D5B0E44FE /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = SwiftHooks/Classes/Context.swift; sourceTree = "<group>"; };
+		346D462291167C0316D277116C1A8359 /* WeakRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakRef.swift; path = SwiftHooks/Classes/WeakRef.swift; sourceTree = "<group>"; };
+		36A25E5BFC8916E3AD07ECE265BC1C6C /* SwiftHooks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHooks.modulemap; sourceTree = "<group>"; };
+		36E9A130AD181D2A80246A7EE548FC8D /* Documentation.docc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.documentationcatalog; name = Documentation.docc; path = SwiftHooks/Assets/Documentation.docc; sourceTree = "<group>"; };
 		38A389021C116A53F4AC47D791BFFFBE /* Pods-SwiftHooks_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftHooks_Tests-dummy.m"; sourceTree = "<group>"; };
 		3B8760E0C104A64B64E1E01301138F25 /* Pods-SwiftHooks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3C0A73EEF1803ACE3135C4A401120182 /* SwiftHooks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHooks.modulemap; sourceTree = "<group>"; };
-		3D35C32F484C108238C534D05EBEA9DE /* Fiber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fiber.swift; path = SwiftHooks/Classes/Fiber.swift; sourceTree = "<group>"; };
-		50DAD98F6CB5B957B7816025285215ED /* SwiftHooks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftHooks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.release.xcconfig; sourceTree = "<group>"; };
-		56556479260B9863CDA587841F386C9F /* SwiftHooks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHooks-umbrella.h"; sourceTree = "<group>"; };
+		3DB22745DCA10AFA5AEFCE2BE80CFDC6 /* SwiftHooks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHooks-dummy.m"; sourceTree = "<group>"; };
+		44A9C0505223C40AC3FAC497E6C8E8BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		598815FB01D74B4F4B01A64AF187330A /* Pods-SwiftHooks_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftHooks_Tests"; path = Pods_SwiftHooks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB5038CF2C858AC6EC08DA25C6CB8DC /* Pods-SwiftHooks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Example.release.xcconfig"; sourceTree = "<group>"; };
-		60E930DFB7F941A419A571BE9E6BE26C /* SwiftHooks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHooks-dummy.m"; sourceTree = "<group>"; };
-		65DAFB55E7DAEA2C758BFE492695E57F /* SwiftHooks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftHooks-Info.plist"; sourceTree = "<group>"; };
 		6E270E9BF912DDFE9EDFD865F04A8F35 /* Pods-SwiftHooks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftHooks_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C2ACB46B1958265D1A70CEA86A5159A /* Pods-SwiftHooks_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftHooks_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8585CE2D0C132CCE75D18EDF4A91500C /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = SwiftHooks/Classes/Context.swift; sourceTree = "<group>"; };
-		880ED83719665DB5F476A8E83C291900 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7D8CCC6D2E74C635A7384B4389A093A1 /* SwiftHooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.release.xcconfig; sourceTree = "<group>"; };
+		807F6B5306942F6897B5650348A18590 /* SwiftHooks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHooks-prefix.pch"; sourceTree = "<group>"; };
 		8854A471208DB73542A6AA755F23F0A1 /* Pods-SwiftHooks_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftHooks_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CF94E7F1C6E0AABD7977FAD19E287AA /* Pods-SwiftHooks_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftHooks_Example-umbrella.h"; sourceTree = "<group>"; };
-		92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.debug.xcconfig; sourceTree = "<group>"; };
+		925C6C7E2405E07F581E791132B4525F /* Fiber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fiber.swift; path = SwiftHooks/Classes/Fiber.swift; sourceTree = "<group>"; };
 		94EFBBAB715151FF7DA0D149EFD312FE /* Pods-SwiftHooks_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		95ADE6E5E4F5DF662EAFAC05EF0148A5 /* Pods-SwiftHooks_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Tests-Info.plist"; sourceTree = "<group>"; };
+		95BABBB1BD539A5ACD9381AC000A61EE /* SwiftHooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHooks.debug.xcconfig; sourceTree = "<group>"; };
 		97426151DBE40135AC861532540DEC8C /* Pods-SwiftHooks_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftHooks_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B4A4EAD67C5B040AD4872F207A5D870E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = SwiftHooks/Classes/State.swift; sourceTree = "<group>"; };
-		B8813560D6A50DD4FB99FB08E167B08A /* WeakRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakRef.swift; path = SwiftHooks/Classes/WeakRef.swift; sourceTree = "<group>"; };
-		B97F0AF58E24AE319100ACD210090C4C /* FiberRoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FiberRoot.swift; path = SwiftHooks/Classes/FiberRoot.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2786C401607B084B2640CAB0B950B85 /* SwiftHooks.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftHooks.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8097304AEE4F34335F2A08295CF5709 /* FiberRoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FiberRoot.swift; path = SwiftHooks/Classes/FiberRoot.swift; sourceTree = "<group>"; };
+		B25BC0C3D01122F6648355FD0D9E8509 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = SwiftHooks/Classes/State.swift; sourceTree = "<group>"; };
+		B69903422864FC5615A788BE225BE4E7 /* SwiftHooks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftHooks-Info.plist"; sourceTree = "<group>"; };
+		B8518C14979ABF430A8865326B3FDCB8 /* SwiftHooks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHooks-umbrella.h"; sourceTree = "<group>"; };
 		CA39CBBF91E4D870123E1494DA604351 /* Pods-SwiftHooks_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftHooks_Example"; path = Pods_SwiftHooks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5F92F9B24E10E4BA6F5992B502ACFE8 /* SwiftHooks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHooks-prefix.pch"; sourceTree = "<group>"; };
 		DB3EB363587E18FA19D6DD54F8BE0EB4 /* SwiftHooks */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHooks; path = SwiftHooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C871D70015E3D7ADAAF80E3984075A /* Pods-SwiftHooks_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Example-Info.plist"; sourceTree = "<group>"; };
 		EC094027FCFD56AC2B644BD19E2D9D3C /* Pods-SwiftHooks_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftHooks_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -91,11 +93,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		612594AF8DD58B186EB8D261006C3A41 /* Frameworks */ = {
+		738567D53F8BBFE131889EFDB89C76D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D1A19990035C45F18155905B771214 /* Foundation.framework in Frameworks */,
+				6D433568B580CEF30535FC42363DCBCE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,30 +129,6 @@
 			path = "Target Support Files/Pods-SwiftHooks_Example";
 			sourceTree = "<group>";
 		};
-		1E693F0B10CCF601935AC8FA30E953D3 /* SwiftHooks */ = {
-			isa = PBXGroup;
-			children = (
-				8585CE2D0C132CCE75D18EDF4A91500C /* Context.swift */,
-				0BB042351243FAB1CFA1813E0830C375 /* Debug.swift */,
-				3D35C32F484C108238C534D05EBEA9DE /* Fiber.swift */,
-				B97F0AF58E24AE319100ACD210090C4C /* FiberRoot.swift */,
-				B4A4EAD67C5B040AD4872F207A5D870E /* State.swift */,
-				B8813560D6A50DD4FB99FB08E167B08A /* WeakRef.swift */,
-				623AAFB0A25807BBCD7B22D559E3A050 /* Pod */,
-				8EB34B04BD079232C4C6F904F9AC6DC3 /* Support Files */,
-			);
-			name = SwiftHooks;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		22866110B390A00770B690EAAA68E3AE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E693F0B10CCF601935AC8FA30E953D3 /* SwiftHooks */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		369C94F161EB5DD095935EF701660A0D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,16 +147,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		623AAFB0A25807BBCD7B22D559E3A050 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				319ED32702177A0C316705BA2C45307A /* LICENSE */,
-				880ED83719665DB5F476A8E83C291900 /* README.md */,
-				50DAD98F6CB5B957B7816025285215ED /* SwiftHooks.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		6CAD4138C3BF84D206A51D6778A6BDA6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,26 +156,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8EB34B04BD079232C4C6F904F9AC6DC3 /* Support Files */ = {
+		A654CE91B019BF1D9E2F905782B33E80 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3C0A73EEF1803ACE3135C4A401120182 /* SwiftHooks.modulemap */,
-				60E930DFB7F941A419A571BE9E6BE26C /* SwiftHooks-dummy.m */,
-				65DAFB55E7DAEA2C758BFE492695E57F /* SwiftHooks-Info.plist */,
-				D5F92F9B24E10E4BA6F5992B502ACFE8 /* SwiftHooks-prefix.pch */,
-				56556479260B9863CDA587841F386C9F /* SwiftHooks-umbrella.h */,
-				92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */,
-				556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */,
+				C2189CAF02EA346E982031E65B631E21 /* SwiftHooks */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftHooks";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C2189CAF02EA346E982031E65B631E21 /* SwiftHooks */ = {
+			isa = PBXGroup;
+			children = (
+				32F001A6BFB0AC3CD3E7F46D5B0E44FE /* Context.swift */,
+				32D52D4CAE1C43C95C039FF46BAD38CB /* Debug.swift */,
+				36E9A130AD181D2A80246A7EE548FC8D /* Documentation.docc */,
+				925C6C7E2405E07F581E791132B4525F /* Fiber.swift */,
+				A8097304AEE4F34335F2A08295CF5709 /* FiberRoot.swift */,
+				B25BC0C3D01122F6648355FD0D9E8509 /* State.swift */,
+				346D462291167C0316D277116C1A8359 /* WeakRef.swift */,
+				F1DE555C3B7ABB3C645C097CF59583B6 /* Pod */,
+				EA58AAF68BF5F64D57FB5941D9717FEA /* Support Files */,
+			);
+			name = SwiftHooks;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				22866110B390A00770B690EAAA68E3AE /* Development Pods */,
+				A654CE91B019BF1D9E2F905782B33E80 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				369C94F161EB5DD095935EF701660A0D /* Products */,
 				6CAD4138C3BF84D206A51D6778A6BDA6 /* Targets Support Files */,
@@ -238,14 +216,39 @@
 			path = "Target Support Files/Pods-SwiftHooks_Tests";
 			sourceTree = "<group>";
 		};
+		EA58AAF68BF5F64D57FB5941D9717FEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36A25E5BFC8916E3AD07ECE265BC1C6C /* SwiftHooks.modulemap */,
+				3DB22745DCA10AFA5AEFCE2BE80CFDC6 /* SwiftHooks-dummy.m */,
+				B69903422864FC5615A788BE225BE4E7 /* SwiftHooks-Info.plist */,
+				807F6B5306942F6897B5650348A18590 /* SwiftHooks-prefix.pch */,
+				B8518C14979ABF430A8865326B3FDCB8 /* SwiftHooks-umbrella.h */,
+				95BABBB1BD539A5ACD9381AC000A61EE /* SwiftHooks.debug.xcconfig */,
+				7D8CCC6D2E74C635A7384B4389A093A1 /* SwiftHooks.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftHooks";
+			sourceTree = "<group>";
+		};
+		F1DE555C3B7ABB3C645C097CF59583B6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				44A9C0505223C40AC3FAC497E6C8E8BD /* LICENSE */,
+				1D16A51FD2DE10CAE1A94FFD04DA4545 /* README.md */,
+				A2786C401607B084B2640CAB0B950B85 /* SwiftHooks.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		226346480F2A68DFCD7946C1CE7B97E4 /* Headers */ = {
+		6FCA551A074A44890080958AC2160FA3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D31F8E1837A992F37E7306C12CA141 /* SwiftHooks-umbrella.h in Headers */,
+				8C336396B24B8F1DF1F3D3C96189B27E /* SwiftHooks-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +283,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5C7A071A9A0FDB80D77169FF54A19FED /* PBXTargetDependency */,
+				391841464875BEA0E1F7C64C231F225B /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftHooks_Tests";
 			productName = Pods_SwiftHooks_Tests;
@@ -289,12 +292,12 @@
 		};
 		83FFA1757BB3E98DE95AF0CA4A6C7C00 /* SwiftHooks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68A7CC29E28A957AC7DC7DF11EC4ED50 /* Build configuration list for PBXNativeTarget "SwiftHooks" */;
+			buildConfigurationList = 23908ED5B2E54D012B149C5B89B8B2EE /* Build configuration list for PBXNativeTarget "SwiftHooks" */;
 			buildPhases = (
-				226346480F2A68DFCD7946C1CE7B97E4 /* Headers */,
-				51138BBC1BE7C84D163EFF22FF7878B5 /* Sources */,
-				612594AF8DD58B186EB8D261006C3A41 /* Frameworks */,
-				78D79F5088E7CFCF646EB1DB2BC8AD17 /* Resources */,
+				6FCA551A074A44890080958AC2160FA3 /* Headers */,
+				EA2839A4C33BA0BD2002F060989E27ED /* Sources */,
+				738567D53F8BBFE131889EFDB89C76D1 /* Frameworks */,
+				ACA3CEA3CB5EF173383AA252BED7E290 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -317,7 +320,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D362C66823EF8EE8EDC39B1145D6D286 /* PBXTargetDependency */,
+				2767E07F61F9227889C1E2616C5DA4C2 /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftHooks_Example";
 			productName = Pods_SwiftHooks_Example;
@@ -332,6 +335,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					83FFA1757BB3E98DE95AF0CA4A6C7C00 = {
+						LastSwiftMigration = "";
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -354,17 +362,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		78D79F5088E7CFCF646EB1DB2BC8AD17 /* Resources */ = {
+		AB1C16FF6F5EB445F69FF24E2BB9F2AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB1C16FF6F5EB445F69FF24E2BB9F2AE /* Resources */ = {
+		ACA3CEA3CB5EF173383AA252BED7E290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611CB050E366E16C93DAE03678F65D9C /* Documentation.docc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,20 +395,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51138BBC1BE7C84D163EFF22FF7878B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A1622A495A54B9A38D8EC8D47CB7DE2 /* Context.swift in Sources */,
-				05AB5ED881305CD725950EE9E4485C4D /* Debug.swift in Sources */,
-				96639B079C4BFC35BBA15B717B583956 /* Fiber.swift in Sources */,
-				11BFDF683FFF7CAC87EDAC248D06FF51 /* FiberRoot.swift in Sources */,
-				14928C3A5746D7011398444274C66E9F /* State.swift in Sources */,
-				C4233C0DD5D12F6F6D8C7FC16ED870E6 /* SwiftHooks-dummy.m in Sources */,
-				488F7D9B207C1C95DC0C5A889A5E1E08 /* WeakRef.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BCC2F34A40B46BAE2485218E76886914 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,20 +403,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA2839A4C33BA0BD2002F060989E27ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B55ACF12DA9AA6EE60996B9F730995 /* Context.swift in Sources */,
+				B63907BC380810F771B7A7C82EA39124 /* Debug.swift in Sources */,
+				916CE48E9A0A498C725797ABFC5B11A4 /* Fiber.swift in Sources */,
+				2E10B7DFE2432222BA7806FF13099BFA /* FiberRoot.swift in Sources */,
+				481AF88933972E895CF93E9D2C87B2EB /* State.swift in Sources */,
+				496C8286D686C720520435A826AC4484 /* SwiftHooks-dummy.m in Sources */,
+				FDAE7A7E46FA73B0989A0BC47D90898B /* WeakRef.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5C7A071A9A0FDB80D77169FF54A19FED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SwiftHooks_Example";
-			target = DB0E7FAC316AA4C459E8B8E8C3AC75CA /* Pods-SwiftHooks_Example */;
-			targetProxy = 66EE19E3B83C54F47ABABD05268F4D9E /* PBXContainerItemProxy */;
-		};
-		D362C66823EF8EE8EDC39B1145D6D286 /* PBXTargetDependency */ = {
+		2767E07F61F9227889C1E2616C5DA4C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHooks;
 			target = 83FFA1757BB3E98DE95AF0CA4A6C7C00 /* SwiftHooks */;
-			targetProxy = 836F335E3742AADE73751552A8BFCC7C /* PBXContainerItemProxy */;
+			targetProxy = 79DA6D5CECD86466FC09FA577174EB32 /* PBXContainerItemProxy */;
+		};
+		391841464875BEA0E1F7C64C231F225B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftHooks_Example";
+			target = DB0E7FAC316AA4C459E8B8E8C3AC75CA /* Pods-SwiftHooks_Example */;
+			targetProxy = 3B31E98073EDEF1784C89C2ADD49D949 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -493,9 +502,9 @@
 			};
 			name = Debug;
 		};
-		710868CB93DCF6BA93CBCFBA7BC95C0C /* Debug */ = {
+		7569F1E748CA766692C5E6DFB8EBB03E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F0273608006E6FA489AD59E2642355 /* SwiftHooks.debug.xcconfig */;
+			baseConfigurationReference = 7D8CCC6D2E74C635A7384B4389A093A1 /* SwiftHooks.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -519,10 +528,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -579,8 +589,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -619,6 +628,37 @@
 			};
 			name = Debug;
 		};
+		A71B79FBA96ACBE882525251F6335627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BABBB1BD539A5ACD9381AC000A61EE /* SwiftHooks.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHooks;
+				PRODUCT_NAME = SwiftHooks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B0E016ECF1845727D90598F85785C7D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B8760E0C104A64B64E1E01301138F25 /* Pods-SwiftHooks_Tests.release.xcconfig */;
@@ -646,38 +686,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BD1BAEBE9E51BACDD60D535D81826072 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 556D13F34B4D789625079C72AD8B1483 /* SwiftHooks.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHooks/SwiftHooks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHooks/SwiftHooks-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHooks/SwiftHooks.modulemap";
-				PRODUCT_MODULE_NAME = SwiftHooks;
-				PRODUCT_NAME = SwiftHooks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -754,20 +762,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23908ED5B2E54D012B149C5B89B8B2EE /* Build configuration list for PBXNativeTarget "SwiftHooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71B79FBA96ACBE882525251F6335627 /* Debug */,
+				7569F1E748CA766692C5E6DFB8EBB03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
 				7EE7A78859F657F6BEFC651185B43192 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68A7CC29E28A957AC7DC7DF11EC4ED50 /* Build configuration list for PBXNativeTarget "SwiftHooks" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				710868CB93DCF6BA93CBCFBA7BC95C0C /* Debug */,
-				BD1BAEBE9E51BACDD60D535D81826072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

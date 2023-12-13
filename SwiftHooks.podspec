@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftHooks'
-  s.version          = '1.1.1'
+  s.version          = '1.2.0'
   s.summary          = '一个简单易用的状态管理框架'
 
 # This description is used to generate tags and improve search results.
@@ -33,4 +33,6 @@ SwiftHooks是一个简单易用的状态管理框架，它可以帮助你管理�
   s.osx.deployment_target = '12.0'
 
   s.source_files = 'SwiftHooks/Classes/**/*'
+  # adding assets folder
+  s.resources = 'SwiftHooks/Assets/**/*'
 end
