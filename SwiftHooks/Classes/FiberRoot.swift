@@ -166,8 +166,10 @@ class FiberNode {
     
     func execSideEffect() {
         let currentDeps = sideEffects.map({ $0.1.map({$0.sig ?? ""}) })
+        // IMPORTANT: 这里不能直接使用 memoDeps，因为 memoDeps 会被修改，而 currentDeps 不会被修改
+        let currentMemoDeps = memoDeps.map({ $0 })
         for (index, deps) in currentDeps.enumerated() {
-            if deps != memoDeps[index] {
+            if deps != currentMemoDeps[index] {
                 memoDeps[index] = deps
                 sideEffects[index].effect()
             }

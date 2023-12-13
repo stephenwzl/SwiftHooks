@@ -74,8 +74,8 @@ class Tests: XCTestCase {
     
     func testStateDependency() {
         var currentValue = 2
-        testFoo.count.setState(currentValue)
         var calledCount = 0
+        testFoo.count.setState(currentValue)
         testFoo.observeCountAdded2 { value in
             XCTAssertEqual(value, currentValue + 2)
             calledCount += 1
@@ -86,7 +86,7 @@ class Tests: XCTestCase {
             testFoo.count.setState(currentValue)
         }
         // TODO: 这里为什么会调这么多遍？
-        XCTAssertEqual(calledCount, 2 * 3 + 1)
+        XCTAssertEqual(calledCount, 3 + 1)
     }
     
 }
