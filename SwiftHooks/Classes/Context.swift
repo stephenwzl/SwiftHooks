@@ -24,13 +24,17 @@ open class Context: NSObject, ContextProtocol {
     }
     
     internal func execSideEffects() {
-        for (index, id) in deps.enumerated() {
+        var toRemove: [ObjectIdentifier] = []
+        for id in deps {
             if let node = FiberRoot.shared.fiber(for: id) {
                 node.execSideEffect()
             } else {
-                deps.remove(at: index)
-                DebugLog("context dep \(String(describing: id)) removed")
+                toRemove.append(id)
             }
+        }
+        toRemove.forEach { id in
+            deps.removeAll { $0 == id }
+            DebugLog("context dep \(String(describing: id)) removed")
         }
     }
     
