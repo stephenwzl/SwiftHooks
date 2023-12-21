@@ -94,7 +94,7 @@ pod 'SwiftHooks'
 
 ## Author
 
-stephenwzl, zhilong@atlasv.com
+stephenwzl, stephenwzlwork@gmail.com 
 
 ## License
 
