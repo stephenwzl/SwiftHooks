@@ -25,7 +25,7 @@ SwiftHooks是一个简单易用的状态管理框架，它可以帮助你管理�
   s.homepage         = 'https://github.com/atlasv-hz-ios/SwiftHooks'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'stephenwzl' => 'zhilong@atlasv.com' }
+  s.author           = { 'stephenwzl' => 'stephenwzlwork@gmail.com' }
   s.source           = { :git => 'https://github.com/stephenwzl/SwiftHooks.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
